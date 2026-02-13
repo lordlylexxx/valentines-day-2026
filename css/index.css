@@ -603,7 +603,7 @@ body {
    ======================================== */
 .footer {
   background: linear-gradient(135deg, var(--dark-red) 0%, var(--primary-red) 100%);
-  padding: 30px;
+  padding: 25px 20px;
   text-align: center;
   margin-top: 50px;
   position: relative;
@@ -613,19 +613,31 @@ body {
 .footer::before {
   content: '🌷';
   position: absolute;
-  top: -20px;
+  top: -18px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 40px;
+  font-size: 35px;
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
 }
 
 .footer-text {
-  font-family: 'Sacramento', cursive;
-  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 3vw, 1.3rem);
   color: var(--white);
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 5px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.footer-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  color: rgba(255, 255, 255, 0.9);
+  margin: 3px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
 }
 
 .footer-text:hover {
@@ -634,9 +646,9 @@ body {
 
 @keyframes heartBeatText {
   0%, 100% { transform: scale(1); }
-  25% { transform: scale(1.1); }
+  25% { transform: scale(1.05); }
   50% { transform: scale(1); }
-  75% { transform: scale(1.08); }
+  75% { transform: scale(1.03); }
 }
 
 /* ========================================
